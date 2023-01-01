@@ -24,38 +24,30 @@ limitations under the License.
 
 > Test if an object has an inherited property.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-inherited-property
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isInheritedProperty = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isInheritedProperty = require( 'path/to/vendor/umd/assert-is-inherited-property/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isInheritedProperty;
-})();
-</script>
+var isInheritedProperty = require( '@stdlib/assert-is-inherited-property' );
 ```
 
 #### isInheritedProperty( value, property )
@@ -133,13 +125,8 @@ bool = isInheritedProperty( obj, 'bap' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var isInheritedProperty = require( '@stdlib/assert-is-inherited-property' );
 
 var bool = isInheritedProperty( {}, 'hasOwnProperty' );
 // returns true
@@ -164,11 +151,6 @@ bool = isInheritedProperty( { 'null': false }, null );
 
 bool = isInheritedProperty( { '[object Object]': false }, {} );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -216,7 +198,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -261,9 +243,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property/tree/umd
+[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property
 
-[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property/tree/umd
+[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property
 
 <!-- </related-links> -->
 

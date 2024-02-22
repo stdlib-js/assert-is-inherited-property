@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isInheritedProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-inherited-property/tags). For example,
+
+```javascript
 import isInheritedProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@v0.2.1-esm/index.mjs';
 ```
 
@@ -126,7 +131,7 @@ bool = isInheritedProperty( obj, 'bap' );
 <body>
 <script type="module">
 
-import isInheritedProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@v0.2.1-esm/index.mjs';
+import isInheritedProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@esm/index.mjs';
 
 var bool = isInheritedProperty( {}, 'hasOwnProperty' );
 // returns true

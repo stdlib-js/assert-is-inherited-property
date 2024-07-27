@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isInheritedProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@esm/index.mjs';
+import isInheritedProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@v0.2.2-esm/index.mjs';
 ```
 
 #### isInheritedProperty( value, property )
@@ -126,7 +126,7 @@ bool = isInheritedProperty( obj, 'bap' );
 <body>
 <script type="module">
 
-import isInheritedProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@esm/index.mjs';
+import isInheritedProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-inherited-property@v0.2.2-esm/index.mjs';
 
 var bool = isInheritedProperty( {}, 'hasOwnProperty' );
 // returns true
